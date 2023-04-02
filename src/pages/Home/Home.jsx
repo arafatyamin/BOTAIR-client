@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import Card from '../../Componnents/Card';
 import Hero from '../../Componnents/Hero';
 import Pagination from '../../Componnents/Pagination';
+import Footer from '../Footer/Footer';
 
 const Home = () => {
     const [allAirlines, setAllAirlines] = useState([]);
@@ -47,6 +48,7 @@ const paginate = pageNumber =>setCurrentPage(pageNumber)
         )}
       </div>
       <Pagination postsPerPage={postsPerPage} totalPosts={newData.length} paginate={paginate}></Pagination>
+      <Footer></Footer>
     </div>
   );
 };
