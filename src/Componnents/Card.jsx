@@ -20,8 +20,8 @@ const Card = ({airline}) => {
             <h1>{name}</h1>
             <div className='group-hover:block hidden'>
             <p style={{ margin:'2px',fontSize:'14px' }}>{alliance==='none'?'':alliance}</p>
-            <h4 className='text-sm'>{phone}</h4>
-            <p className='break-words'>{site}</p>
+            <p className='hover:text-blue-700'><a href={"tel:"+{phone}}>{phone}</a></p>
+            <a href={site} target='_blank' rel="noreferrer" className='break-words hover:border-b-2 hover:text-blue-700'>{site}</a>
             </div>
             </div>
         </div>
